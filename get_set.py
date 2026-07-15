@@ -39,7 +39,7 @@ SETTINGS_INIT = {
 def get_settings_file_path():
     """Path to settings file."""
     settings_folder = pathlib.Path(
-        bpy.utils.user_resource("CONFIG", path="BlendLuxCore", create=True)
+        bpy.utils.user_resource("CONFIG", path="blendluxcore", create=True)
     )
     settings_file = settings_folder / SETTINGS_FILENAME
     return settings_file
