@@ -44,7 +44,7 @@ jobs:
       - name: Set up Blender
         uses: moguri/setup-blender@v1
         with:
-          blender-version: '4.2.8'
+          blender-version: '4.2'
 
       - name: Set up cmake
         uses: lukka/get-cmake@latest
