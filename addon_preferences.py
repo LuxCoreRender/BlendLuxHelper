@@ -327,7 +327,7 @@ class BLH_OT_ReloadScripts(bpy.types.Operator):
     def execute(self, context):
         # Attempt to reload the BlendLuxCore addon (must be installed)
         try:
-            bpy.ops.script.reload()
+            bpy.ops.script.reload(reload_scripts=True, extensions=True)
             self.report({"INFO"}, "Scripts reloaded.")
         except Exception as e:
             self.report({"ERROR"}, f"Failed to reload scripts: {e}")
