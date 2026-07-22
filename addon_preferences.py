@@ -277,6 +277,7 @@ class BLH_OT_EditableInstall(bpy.types.Operator):
             )
         )
         symlink_name = src.parts[-1]
+        symlink_name = symlink_name.lower()
         symlink_path = dst_folder / symlink_name
 
         # Validate source directory
